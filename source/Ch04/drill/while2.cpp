@@ -7,20 +7,20 @@ constexpr double m_per_cm = 100;
 constexpr double in_per_cm = 2.54;
 constexpr double ft_per_in = 12;
 vector<double> numberSum;
-double smallest = std::numeric_limits<double>::max();
-double largest = std::numeric_limits<double>::min();
+double smallest = numeric_limits<double>::max();
+double largest = numeric_limits<double>::lowest();
 
 
 void largest_smallest()
 {
-	if (number > largest)
+	if (numberSum[numberSum.size() - 1] > largest)
 	{
-		largest = number;
+		largest = numberSum[numberSum.size() - 1];
 		cout << "The largest so far: " << numberSum[numberSum.size() - 1] << 'm' << endl;
 	}
-	else if (number < smallest)
+	else if (numberSum[numberSum.size() - 1] < smallest)
 	{
-		smallest = number;
+		smallest = numberSum[numberSum.size() - 1];
 		cout << "The smallest so far: " << numberSum[numberSum.size() - 1] << 'm' << endl;
 	}
 }
