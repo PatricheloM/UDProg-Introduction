@@ -30,7 +30,7 @@ int main()
 {
 	cout << "Enter a number and its unit!" << endl;
 
-	while (cin >> number >> mesure)
+	while (cin >> number >> mesure) // cm ~ 1; m ~ 2; in ~ 3; ft ~ 4
 	{
 		if (mesure == "cm")
 		{
@@ -81,7 +81,6 @@ int main()
 	for (double x : numberSum)
 	{
 		sum += x;
-
 	}
 	cout << "The sums in order: " << endl;
 	sort(numberSum);
@@ -90,5 +89,7 @@ int main()
 		cout << y << 'm' << endl;
 	}
 	cout << sum << "m is the sum of the units." << endl;
+	cout << "Smallest: " << numberSum[0] << 'm' << endl;
+	cout << "Largest: " << numberSum[numberSum.size() - 1] << 'm' << endl;
 	return 0;
 }

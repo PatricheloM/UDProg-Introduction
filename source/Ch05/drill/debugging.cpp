@@ -49,7 +49,7 @@ try {
 
 	//int i = 0; int j = 0; while (i < 10) ++i; if (j < i) cout << "Success!\n"; //X
 	
-	//int x = 4; double d = 5/(x - 2); if (d == (x / 2) + 0.5) cout << "Success!\n";
+	//int x = 4; double d = 5/(x - 2); if (d == (x / 2) + 0.5) cout << "Success!\n"; //X
 	
 	//cout << "Success!\n"; //X
 

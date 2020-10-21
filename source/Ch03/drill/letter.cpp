@@ -13,15 +13,19 @@ int main()
 	cout << "Enter the name and sex ('f' or 'm') of your friend divided by a whitespace: ";
 	cin >> friend_name >> friend_sex;
 
-	cout << "Have you seen " << friend_name << " lately?";
+	cout << "Have you seen " << friend_name << " lately?" << endl;
 
 	if (friend_sex == 'm')
 	{
-		cout << "\nIf you see " + friend_name + " please ask him to call me.";
+		cout << "If you see " + friend_name + " please ask him to call me.";
 	}
 	else if (friend_sex == 'f')
 	{
-		cout << "\nIf you see " + friend_name + " please ask her to call me.";
+		cout << "If you see " + friend_name + " please ask her to call me.";
+	}
+	else
+	{
+		simple_error("Gender must be f or m!");
 	}
 
 	int age;
