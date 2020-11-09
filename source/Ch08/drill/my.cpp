@@ -1,8 +1,12 @@
 #include "../../std_lib_facilities.h"
 #include "my.h"
 
-int main()
+void print_foo()
 {
-	
-	return 0;
+	cout << foo << endl;
+}
+
+void print(int i)
+{
+	cout << i << endl;
 }
