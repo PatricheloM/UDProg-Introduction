@@ -7,15 +7,15 @@ private:
 	int month;
 	int day;
 public:
-	void print_date() {	cout << "Date: " << year << '.' << month << '.' << day << '.' << endl; }
+	void print_date() { cout << "Date: " << year << '.' << month << '.' << day << '.' << endl; }
 	date(int y, int m, int d);
 	void add_day(int n);
-	int get_year() { return year; }
-	int get_month() { return month; }
-	int get_day() { return day; }
+	int get_year() const { return year; }
+	int get_month() const { return month; }
+	int get_day() const { return day; }
 };
 
-enum month {jan = 1, feb, mar, apr, may, jun, jul, aug, sep, oct, nov, dec};
+enum class month {jan, feb, mar, apr, may, jun, jul, aug, sep, oct, nov, dec};
 
 date::date(int y, int m, int d)
 {
@@ -149,8 +149,12 @@ int main()
 	date today {2020, 10, 1};
 	today.print_date();
 
-	today.add_day(92);
+	//today.add_day(n);
 	today.print_date();
+
+	date tomorrow {today};
+	tomorrow.add_day(1);
+	tomorrow.print_date();
 
 	return 0;
 }
