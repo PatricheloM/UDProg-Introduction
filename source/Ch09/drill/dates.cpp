@@ -150,7 +150,7 @@ int main()
 	today.print_date();
 
 	//today.add_day(n);
-	today.print_date();
+	//today.print_date();
 
 	date tomorrow {today};
 	tomorrow.add_day(1);
