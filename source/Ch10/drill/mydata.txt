@@ -1,0 +1,7 @@
+Point0: (354,423)
+Point1: (5,6)
+Point2: (1,10)
+Point3: (23,5)
+Point4: (6,9)
+Point5: (4,20)
+Point6: (32,1)
