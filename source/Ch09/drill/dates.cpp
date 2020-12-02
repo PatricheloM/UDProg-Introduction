@@ -15,7 +15,6 @@ public:
 	int get_day() const { return day; }
 };
 
-enum class month {jan, feb, mar, apr, may, jun, jul, aug, sep, oct, nov, dec};
 
 date::date(int y, int m, int d)
 {
