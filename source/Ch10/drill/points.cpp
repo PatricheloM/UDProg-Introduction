@@ -6,8 +6,8 @@ private:
 	double xCoord;
 	double yCoord;
 public:
-	double x() { return xCoord; }
-	double y() { return yCoord; }
+	double x() const { return xCoord; }
+	double y() const { return yCoord; }
 	point(double x, double y) { xCoord = x; yCoord = y;}
 	void print_point() { cout << '(' << xCoord<< "," << yCoord << ')' << endl; }
 };
@@ -23,6 +23,8 @@ void output_points(string filename, vector<point> vector)
 	{
 		sw << "Point" << i << ": " << '(' << vector[i].x() << "," << vector[i].y() << ')' << endl;
 	}
+
+	sw.close();
 }
 
 void get_coords(string filename, vector<point>& vector)
@@ -88,6 +90,8 @@ void get_coords(string filename, vector<point>& vector)
 		xDouble = 0;
 		yDouble = 0;
 	}
+
+	sr.close();
 }
 
 void vector_compare(vector<point> vector1, vector<point> vector2)
